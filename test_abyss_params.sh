@@ -4,8 +4,8 @@ set -x
 #ABYSSPE=../app/abyss-pe
 FQT1=100489_R1.fq-trimmed-pair1.fastq
 FQT2=100489_R1.fq-trimmed-pair2.fastq
-for k in 31 41 51 61 ; do
-  for c in 3 5 10 15; do
+for k in 31 41 51 61 71 81; do
+  for c in 3 5 10 15 20 25; do
     PFX=k${k}_c${c}
     mkdir $PFX
     if [ ! -r $PFX/finished ] ; then
